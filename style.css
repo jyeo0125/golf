@@ -127,6 +127,13 @@ height: 70px;
     background-color: darkgrey;
     
 }
+.navbar__toggle-btn {
+    position: absolute;
+    right: 32px;
+    font-size: 26px;
+    color: var(--color-white);
+    display: none;
+}
 
 /* Home */
 
@@ -140,6 +147,21 @@ height: 70px;
 .home__title,
 .home__description{
 color: var(--color-light-white);
+}
+
+/* Service */
+#service__one__pic,#service__two__pic,#service__three__pic {
+    width: 250px;
+    height: 300px;
+    margin: 15px;
+}
+
+#service__one,#service__two,#service__three {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+
+    
 }
 
 /* Section common */
@@ -169,6 +191,11 @@ color: var(--color-light-white);
     pointer-events: auto;
     
 }
+
+
+
+
+
 /*  For below 750px screen size*/
 @media screen and (max-width: 750px) { 
     .navbar__toggle-btn{
