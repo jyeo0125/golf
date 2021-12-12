@@ -100,7 +100,7 @@ p {
     position: fixed;
     display: flex;
     justify-content: space-around;
-    background-color: transparent;
+    background-color: black transparent;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
@@ -126,6 +126,11 @@ height: 70px;
     border-radius: var(--size-border-radius);
     background-color: darkgrey;
     
+}
+#navbar.navbar--dark {
+    background-color: lightgray;
+    padding: 5px;
+    z-index: 1;
 }
 .navbar__toggle-btn {
     position: absolute;
@@ -181,7 +186,7 @@ color: var(--color-light-white);
     bottom: 50px;
     right: 50px;
     font-size: 55px;
-    color: royalblue;
+    color: lightgray;
     opacity: 0;
     pointer-events: none;
     transition: all 300ms ease-in;
