@@ -108,10 +108,7 @@ p {
     transition: all var(--animation-duration) ease-in-out;
     
 }
-#logo {
-width: 70px;
-height: 70px;
-}
+
 .navbar__menu {
     display: flex;   
 }
@@ -130,7 +127,7 @@ height: 70px;
 .navbar__menu__item:hover {
     border: var(--color-white);
     border-radius: var(--size-border-radius);
-    background-color: darkgrey;
+    background-color: rgb(99, 99, 99);
     
 }
 #navbar.navbar--dark {
@@ -202,10 +199,48 @@ color: var(--color-light-white);
     flex-direction: row-reverse;
 
 }
-
+.service__one__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.service__one__btn__cont{
+    display: flex;
+}
+.service__one__btn{
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#504d4d;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin-right: 15px;
+}
+.service__one__btn:hover{
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.service__one__btn:active{
+    position:relative;
+	top:1px;
+}
 .service__article {
     margin: 35px;
 }
+
+.service__p {
+max-width: 40vw;
+}
+
 /* Section common */
 .section {
     padding: 50px;
@@ -234,6 +269,16 @@ color: var(--color-light-white);
     
 }
 /* Icon */
+.navbar__instagram__btn{
+    font-size: 25px;
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.navbar__facebook__btn{
+    font-size: 25px;
+    color: whitesmoke;
+}
 .facebook__btn{
     font-size: 35px;
     color: whitesmoke;
@@ -252,9 +297,34 @@ color: var(--color-light-white);
     background-color: rgb(52, 58, 65);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
 
+.contact__name{
+    font-size: 40px;
+    color: whitesmoke;
+}
+#contact__middle__cont{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.contact__hours{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.contact__address{
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.contact__phone{
+    color: whitesmoke;
+    font-size: 18px;
+    padding-top: 20px;
+}
 
 /*  For below 750px screen size*/
 @media screen and (max-width: 750px) { 

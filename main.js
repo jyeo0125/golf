@@ -14,6 +14,19 @@ document.addEventListener('scroll', ( )=> {
     }
 });
 
+// Service btn 
+
+const opneBtn = document.querySelector('#service__one__btn__open')
+const roomBtn = document.querySelector('#service__one__btn__room')
+
+opneBtn.addEventListener('click', (event)=>{
+    console.log('openbtn');
+})
+
+roomBtn.addEventListener('click', (event)=>{
+    console.log('roombtn');
+})
+
 // Scrolling when tapping on the navbar menu
 
 const navbarMenu =  document.querySelector('.navbar__menu')
@@ -48,18 +61,18 @@ document.addEventListener('scroll', ()=>{
 })
 
 // Show 'arrow' btn when scrolling down
-const arrowUp = document.querySelector('.arrow-up')
-document.addEventListener('scroll', ()=>{
-    if(window.scrollY > homeHeight /2) {
-        arrowUp.classList.add('visible')
-    } else {
-        arrowUp.classList.remove('visible')
-    }
-})
+// const arrowUp = document.querySelector('.arrow-up')
+// document.addEventListener('scroll', ()=>{
+//     if(window.scrollY > homeHeight /2) {
+//         arrowUp.classList.add('visible')
+//     } else {
+//         arrowUp.classList.remove('visible')
+//     }
+// })
 // Handle click 'arrow'btn
-arrowUp.addEventListener('click', ( )=>{
-    scrollIntoView('#home')
-})
+// arrowUp.addEventListener('click', ( )=>{
+//     scrollIntoView('#home')
+// })
 
 
 
