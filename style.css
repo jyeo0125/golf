@@ -178,7 +178,7 @@ color: var(--color-light-white);
 }
 
 /* Service */
-#service__one__pic,#service__two__pic,#service__three__pic {
+#service__one__pic,.service__two__pic,#service__three__pic {
     width: 455px;
     height: 395px;
     margin: 15px;
@@ -198,6 +198,10 @@ color: var(--color-light-white);
     justify-content: space-around;
     flex-direction: row-reverse;
 
+}
+
+#service__two__img__cont{
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
 }
 .service__one__aside {
     display: flex;
@@ -241,6 +245,9 @@ color: var(--color-light-white);
 max-width: 40vw;
 }
 
+.service__p.invisible{
+    display: none;
+}
 /* Section common */
 .section {
     padding: 50px;
@@ -348,7 +355,6 @@ max-width: 40vw;
         display: none;
         
     }
-
     .navbar__menu.open {
         display: block;
         background-color: transparent;

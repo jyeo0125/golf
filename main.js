@@ -1,11 +1,11 @@
 // Navbar 
 const navbar = document.querySelector('#navbar')
 const navbarHeight = navbar.getBoundingClientRect().height
-console.log(navbarHeight);
+// console.log(navbarHeight);
 
 document.addEventListener('scroll', ( )=> {
-    console.log(window.scrollY)
-    console.log(`navbarHeight: ${navbarHeight}`)
+    // console.log(window.scrollY)
+    // console.log(`navbarHeight: ${navbarHeight}`)
     
     if(window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark')
@@ -18,13 +18,20 @@ document.addEventListener('scroll', ( )=> {
 
 const opneBtn = document.querySelector('#service__one__btn__open')
 const roomBtn = document.querySelector('#service__one__btn__room')
+const openContent = document.querySelector('#service__p__open')
+const roomContent = document.querySelector("#service__p__room")
+const mainContent = document.querySelector("#service__p__general")
 
 opneBtn.addEventListener('click', (event)=>{
-    console.log('openbtn');
+    openContent.classList.remove("invisible")
+    roomContent.classList.add('invisible')
+    mainContent.classList.add('invisible')
 })
 
 roomBtn.addEventListener('click', (event)=>{
-    console.log('roombtn');
+    roomContent.classList.remove('invisible')
+    openContent.classList.add('invisible')
+    mainContent.classList.add('invisible')
 })
 
 // Scrolling when tapping on the navbar menu
@@ -54,7 +61,7 @@ navbarToggleBtn.addEventListener('click', () => {
 
 const home = document.querySelector('#home_container')
 const homeHeight = home.getBoundingClientRect().height
-console.log(homeHeight);
+// console.log(homeHeight);
 
 document.addEventListener('scroll', ()=>{
     home.style.opacity = 1 -window.scrollY / homeHeight
@@ -75,7 +82,21 @@ document.addEventListener('scroll', ()=>{
 // })
 
 
+// Img slide
 
+var indexValue = 0;
+    function slideShow(){
+        setTimeout(slideShow, 3000);
+        var x;
+        const img = document.querySelectorAll(".service__two__pic");
+        for(x = 0; x < img.length; x++){
+        img[x].style.display = "none";
+        }
+        indexValue++;
+        if(indexValue > img.length){indexValue = 1}
+        img[indexValue -1].style.display = "block";
+}
+slideShow()
 
 
 
@@ -84,5 +105,5 @@ document.addEventListener('scroll', ()=>{
 
 function scrollIntoView(selector)  {
     const scrollTo = document.querySelector(selector)
-    scrollTo.scrollIntoView({behavior:'smooth'})
+    scrollTo.scrollIntoView({behavior:'smooth', block:"center"})
 }
