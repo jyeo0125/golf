@@ -15,23 +15,35 @@ document.addEventListener('scroll', ( )=> {
 });
 
 // Service btn 
-
+// Service dom
 const opneBtn = document.querySelector('#service__one__btn__open')
 const roomBtn = document.querySelector('#service__one__btn__room')
 const openContent = document.querySelector('#service__p__open')
 const roomContent = document.querySelector("#service__p__room")
 const mainContent = document.querySelector("#service__p__general")
+const mainPic = document.querySelector("#service__one__pic__main")
+const openPic = document.querySelector("#service__one__pic__open")
+const roomPic = document.querySelector("#service__one__pic__room")
 
 opneBtn.addEventListener('click', (event)=>{
     openContent.classList.remove("invisible")
     roomContent.classList.add('invisible')
     mainContent.classList.add('invisible')
+
+    openPic.classList.remove("invisible")
+    roomPic.classList.add('invisible')
+    mainPic.classList.add('invisible')
 })
 
 roomBtn.addEventListener('click', (event)=>{
     roomContent.classList.remove('invisible')
     openContent.classList.add('invisible')
     mainContent.classList.add('invisible')
+
+
+    roomPic.classList.remove('invisible')
+    mainPic.classList.add('invisible')
+    openPic.classList.add('invisible')
 })
 
 // Scrolling when tapping on the navbar menu
