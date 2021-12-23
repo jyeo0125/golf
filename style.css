@@ -156,7 +156,7 @@ p {
 #about {
     background-color: rgb(80, 83, 82);
     width: 100vw;
-    height: 45vh;
+    height: 55vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -175,7 +175,7 @@ margin: 165px;
 
 #home{
     background: url("./pic/main.jpg") center/cover no-repeat;
-    height: 35vh;
+    height: 45vh;
     padding: 40px;
     padding-top: 140px;
     text-align: center;
