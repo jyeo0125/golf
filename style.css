@@ -30,7 +30,7 @@
         --size-border-radius: 5px;
     
     /* Annimation */
-            --animation-duration: 300ms;
+        --animation-duration: 300ms;
     }
 
 /* Universal Tags */
@@ -107,6 +107,8 @@ p {
     padding: 16px;
     transition: all var(--animation-duration) ease-in-out;
     
+    
+    
 }
 
 .navbar__menu {
@@ -141,6 +143,13 @@ p {
     font-size: 26px;
     color: var(--color-white);
     display: none;
+}
+
+#logo{
+    color: rgb(251, 255, 0);
+    font-size: 40px;
+    font-family: 'Abril Fatface', cursive;
+    
 }
 /* About */
 
@@ -179,8 +188,8 @@ color: var(--color-light-white);
 
 /* Service */
 .service__one__pic,.service__two__pic,.service__three__pic {
-    width: 455px;
-    height: 395px;
+    width: 485px;
+    height: 355px;
     margin: 15px;
     padding: 25px;
 }

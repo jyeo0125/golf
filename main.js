@@ -98,7 +98,7 @@ document.addEventListener('scroll', ()=>{
 
 var indexValue = 0;
     function slideShow(){
-        setTimeout(slideShow, 3000);
+        setTimeout(slideShow, 3500);
         var x;
         const img = document.querySelectorAll(".service__two__pic");
         for(x = 0; x < img.length; x++){
