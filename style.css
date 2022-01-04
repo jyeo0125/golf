@@ -144,7 +144,7 @@ p {
 }
 
 #logo{
-    color: rgb(251, 255, 0);
+    color:gold;
     font-size: 40px;
     font-family: 'Abril Fatface', cursive;
     
@@ -333,10 +333,11 @@ max-width: 40vw;
 }
 
 .contact__phone{
-    color: whitesmoke;
-    font-size: 18px;
+    color: rgb(189, 31, 189);
+    font-size: 20px;
     padding-top: 20px;
 }
+
 
 /*  For below 750px screen size*/
 @media screen and (max-width: 975px) { 
@@ -430,7 +431,7 @@ max-width: 40vw;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: auto;
+        width: 100%;
     }
     #contact__right__cont{
         display: flex;
