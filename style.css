@@ -349,10 +349,12 @@ max-width: 40vw;
     .navbar__toggle-btn{
         display: block;
         padding: 50px;
+        
     }
     #navbar {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
     .navbar__menu__cont{
         display: flex;
@@ -392,7 +394,7 @@ max-width: 40vw;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     .service__img__cont{
         width: 100%;
@@ -407,13 +409,19 @@ max-width: 40vw;
     max-width: 100%;
     }
     
+    .service__one__pic,.service__two__pic,.service__three__pic {
+        width: 300px;
+        height: 250px;
+        margin: 0;
+        padding:0;
+    }
 
 /* Contact section for small screen */
     #contact {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     #contact__right__cont{
         display: flex;
