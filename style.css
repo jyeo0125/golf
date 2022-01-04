@@ -348,8 +348,8 @@ max-width: 40vw;
     /* Navbar for small screen */
     .navbar__toggle-btn{
         display: block;
-        padding: 50px;
-        
+        padding: 17%;
+
     }
     #navbar {
         flex-direction: column;
@@ -376,19 +376,32 @@ max-width: 40vw;
         display: block;
         background-color: transparent;
     }
+    #logo{
+        color: rgb(251, 255, 0);
+        font-size: 26px;
+        font-family: 'Abril Fatface', cursive;
+        
+    }
 /* Service sections for small screen */
+    .service__main__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     #service__one,#service__three {
         display: flex;
         justify-content: center;
         flex-direction: column;
         box-shadow: none;
-        width: 100%;
+        width: 100vw;
+        
     }
     #service__two{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
     }
     .service__article{
         display: flex;
@@ -406,7 +419,7 @@ max-width: 40vw;
         flex-grow: 1;
     }
     .service__p {
-    max-width: 100%;
+    max-width: 100vw;
     }
     
     .service__one__pic,.service__two__pic,.service__three__pic {
