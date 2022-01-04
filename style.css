@@ -340,9 +340,7 @@ max-width: 40vw;
 
 /*  For below 750px screen size*/
 @media screen and (max-width: 975px) { 
-    html,body{
-        width: 100%;
-    }
+    
     /* Home for small screen */
     #home{
         width: 100%;
@@ -396,7 +394,12 @@ max-width: 40vw;
         align-items: center;
         justify-content: space-between;
     }
-    
+    .service__img__cont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .service__p {
     max-width: 100%;
