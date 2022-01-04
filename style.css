@@ -44,6 +44,7 @@ body {
 }
 ul {
     list-style: none;
+    padding-left: 0;
 }
 a{
     text-decoration: none;
@@ -344,11 +345,14 @@ max-width: 40vw;
     /* Home for small screen */
     #home{
         width: 100%;
+        margin-left: 2.5%;
+
+        
     }
     /* Navbar for small screen */
     .navbar__toggle-btn{
         display: block;
-        padding-right: 20%;
+        padding-right: 2%;
 
     }
     #navbar {
@@ -368,7 +372,9 @@ max-width: 40vw;
         width: 100%;
         display: none;
     }
-    
+    .navbar__icon__cont{
+        display: none;
+    }
     .navbar__menu.open {
         display: block;
         background-color: transparent;
