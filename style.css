@@ -35,6 +35,7 @@
 
 /* Universal Tags */
 
+
 body {
     margin:0;
     cursor: default;
@@ -106,9 +107,6 @@ p {
     color: var(--color-white);
     padding: 16px;
     transition: all var(--animation-duration) ease-in-out;
-    
-    
-    
 }
 
 .navbar__menu {
@@ -209,8 +207,6 @@ color: var(--color-light-white);
     flex-direction: row-reverse;
 
 }
-
-
 .service__one__aside {
     display: flex;
     flex-direction: column;
@@ -222,7 +218,7 @@ color: var(--color-light-white);
 }
 .service__one__btn{
     box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #e0dbdb 5%, #bdb9b9 100%);
 	background-color:#ffffff;
 	border-radius:6px;
 	border:1px solid #dcdcdc;
@@ -232,7 +228,7 @@ color: var(--color-light-white);
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
-	padding:6px 24px;
+	padding:6px 30px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
     margin-right: 15px;
@@ -293,16 +289,14 @@ max-width: 40vw;
     margin-left: 20px;
     margin-right: 10px;
 }
-.navbar__facebook__btn{
+.navbar__map__btn{
     font-size: 25px;
     color: whitesmoke;
 }
-.facebook__btn{
-    font-size: 35px;
-    color: whitesmoke;
-}
+
 .instagram__btn{
     font-size: 35px;
+    padding-right: 15px;
     color: whitesmoke;
 }
 .map__btn{
@@ -345,9 +339,18 @@ max-width: 40vw;
 }
 
 /*  For below 750px screen size*/
-@media screen and (max-width: 750px) { 
+@media screen and (max-width: 975px) { 
+    html,body{
+        width: 100%;
+    }
+    /* Home for small screen */
+    #home{
+        width: 100%;
+    }
+    /* Navbar for small screen */
     .navbar__toggle-btn{
         display: block;
+        padding: 50px;
     }
     #navbar {
         flex-direction: column;
@@ -364,11 +367,53 @@ max-width: 40vw;
         text-align: center;
         width: 100%;
         display: none;
-        
+    }
+    .navbar__icon__cont{
+        border: 1px solid;
+        display: none;
     }
     .navbar__menu.open {
         display: block;
         background-color: transparent;
-        
+    }
+/* Service sections for small screen */
+    #service__one,#service__three {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: none;
+        width: 100%;
+    }
+    #service__two{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .service__article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .service__p {
+    max-width: 100%;
+    }
+    
+
+/* Contact section for small screen */
+    #contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    #contact__right__cont{
+        display: flex;
     }
 }
+
+
+
