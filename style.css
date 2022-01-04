@@ -400,7 +400,9 @@ max-width: 40vw;
         justify-content: center;
         align-items: center;
     }
-    
+    .service__container{
+        flex-grow: 1;
+    }
     .service__p {
     max-width: 100%;
     }
