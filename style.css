@@ -340,7 +340,6 @@ max-width: 40vw;
 
 /*  For below 750px screen size*/
 @media screen and (max-width: 975px) { 
-    
     /* Home for small screen */
     #home{
         width: 100%;
@@ -348,7 +347,7 @@ max-width: 40vw;
     /* Navbar for small screen */
     .navbar__toggle-btn{
         display: block;
-        padding: 17%;
+        padding-right: 20%;
 
     }
     #navbar {
@@ -368,10 +367,7 @@ max-width: 40vw;
         width: 100%;
         display: none;
     }
-    .navbar__icon__cont{
-        border: 1px solid;
-        display: none;
-    }
+    
     .navbar__menu.open {
         display: block;
         background-color: transparent;
@@ -383,12 +379,7 @@ max-width: 40vw;
         
     }
 /* Service sections for small screen */
-    .service__main__cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    
     #service__one,#service__three {
         display: flex;
         justify-content: center;
@@ -401,7 +392,11 @@ max-width: 40vw;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
+    }
+    .service__one__btn__cont{
+        padding-top: 15px;
+        align-items: center;
     }
     .service__article{
         display: flex;
@@ -435,6 +430,7 @@ max-width: 40vw;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: auto;
     }
     #contact__right__cont{
         display: flex;
