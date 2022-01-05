@@ -245,9 +245,14 @@ color: var(--color-light-white);
 .service__article {
     margin: 35px;
 }
-
+.service__title{
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+}
 .service__p {
 max-width: 40vw;
+font-size: 20px;
+font-family: 'Merriweather', serif;
 }
 
 .service__p.invisible{
@@ -297,7 +302,7 @@ max-width: 40vw;
 
 .instagram__btn{
     font-size: 35px;
-    padding-right: 15px;
+    padding-right: 5px;
     color: whitesmoke;
 }
 .map__btn{
@@ -344,15 +349,18 @@ max-width: 40vw;
 @media screen and (max-width: 975px) { 
     /* Home for small screen */
     #home{
-        width: 100%;
-        margin-left: 2.5%;
+    
+        width: 100vw;
+        margin-left: 2px;
+        height: 30vh;
+        
 
         
     }
     /* Navbar for small screen */
     .navbar__toggle-btn{
         display: block;
-        padding-right: 2%;
+        padding-right: 5%;
 
     }
     #navbar {
