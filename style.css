@@ -337,11 +337,17 @@ font-family: 'Merriweather', serif;
     color: whitesmoke;
     font-size: 18px;
 }
-
+.contact__email{
+    color: whitesmoke;
+    font-size: 17px;
+    
+}
 .contact__phone{
     color: rgb(189, 31, 189);
     font-size: 20px;
     padding-top: 20px;
+    font-family: 'Merriweather', serif;
+    
 }
 
 
