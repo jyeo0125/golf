@@ -349,13 +349,8 @@ font-family: 'Merriweather', serif;
 @media screen and (max-width: 975px) { 
     /* Home for small screen */
     #home{
-    
-        width: 100vw;
-        margin-left: 2px;
-        height: 30vh;
-        
-
-        
+        width:100% ;
+        height: 30vh; 
     }
     /* Navbar for small screen */
     .navbar__toggle-btn{
@@ -429,7 +424,7 @@ font-family: 'Merriweather', serif;
         flex-grow: 1;
     }
     .service__p {
-    max-width: 100vw;
+    max-width: 100%;
     }
     
     .service__one__pic,.service__two__pic,.service__three__pic {
@@ -450,6 +445,17 @@ font-family: 'Merriweather', serif;
     #contact__right__cont{
         display: flex;
     }
+    .instagram__btn{
+        font-size: 35px;
+        margin-top: 5px;
+        color: whitesmoke;
+    }
+    .map__btn{
+        font-size: 35px;
+        padding-left: 40px;
+        color: whitesmoke;
+    }
+    
 }
 
 
